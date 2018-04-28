@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "challenge": "1. I am your daddy, I'll take you to space; One of my projects is Boring; Answer with my name and I'll take you cruising in my awesome Model S.\nAsk around for the puzzle when you find me!",
+    "answer": "elon musk",
+    "hint": "My cars always fall in love with pigeons",
+    "points": 50
+  },
+  {
+    "id": 2,
+    "challenge": "2. I am a famous nebula, hiding in the bull's horns. What's my name and M number?",
+    "answer": "crab nebula m1",
+    "hint": "I share my name with Spongebob's favourite restaurant",
+    "points": 50
+  },
+  {
+    "id": 3,
+    "challenge": "3. I'm not too hot and not too cold, the only zone where life will hold. Get closer to the sun and burn, get further and become an icicle. What is my name?",
+    "answer": "goldilocks zone",
+    "hint": "Bears don't really like me",
+    "points": 50
+  },
+  {
+    "id": 4,
+    "challenge": "4. I was first called LGM,and they thought they found aliens, but I'm just a dense, small mass of neutrons. What am I?",
+    "answer": "pulsar",
+    "hint": "I pulse, darling",
+    "response": "Come to table 0b1011 to collect the second puzzle piece. Hurry, only the first astronaut to reach us will get it",
+    "points": 50
+  }
+]
