@@ -3,7 +3,7 @@
 const accountSid = 'ACa51ed6fc7942c9b655a56ffb081d23bf';
 const authToken = '6ad541389549c68600f8b43eee7de032';
 const client = require('twilio')(accountSid, authToken);
-var request = require('request')
+var request = require('request');
 var challenges = require('./../../challenges.json');
 
 var url = 'http://pi:cluster@proxy.rp01.eu.ngrok.io/'
