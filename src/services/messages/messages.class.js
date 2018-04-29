@@ -54,8 +54,8 @@ class Service {
         })
         challenge = challenge[0];
         console.log(challenge);
-        console.log(data["Body"].toLowerCase().indexOf(challenge.answer))
-        if(data["Body"].toLowerCase().indexOf(challenge.answer) !== -1){
+        console.log(data["Body"].toLowerCase().indexOf(challenge.answer.toLowerCase()))
+        if(data["Body"].toLowerCase().indexOf(challenge.answer.toLowerCase()) !== -1){
 
           //update score in the database
           request.get({

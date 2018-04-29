@@ -25,7 +25,35 @@
     "challenge": "4. I was first called LGM,and they thought they found aliens, but I'm just a dense, small mass of neutrons. What am I?",
     "answer": "pulsar",
     "hint": "I pulse, darling",
-    "response": "Come to table 0b1011 to collect the second puzzle piece. Hurry, only the first astronaut to reach us will get it.\nThis is the end of the first round. Check your messages later on for the next round.",
     "points": 50
+  },
+  {
+    "id": 5,
+    "challenge": "5. Old and reliable, I always point through stars and my typing is static. I have no objects, but I'm always structured. What's my name?",
+    "answer": "C",
+    "hint": "Pointer to pointer to pointer points to me",
+    "points": 60
+  },
+  {
+    "id": 6,
+    "challenge": "6. I'm your hot coffee, robust and classy, it takes half the lines of code if you write me in Python",
+    "answer": "Java",
+    "hint": "I'm oriented to objects",
+    "points": 50
+  },
+  {
+    "id": 7,
+    "challenge": "7. Trusssst in me...\n Simple is better than complex, \n Trusssst in me...\n Dynamic typing is better...\n Trusssst in me...\n Don't ever forget to indent me!",
+    "answer": "Python",
+    "hint": "Find me in the jungle",
+    "points": 50
+  },
+  {
+    "id": 8,
+    "challenge": "8. I only answer yes or no, my roots are in first order logic; If you feel like crying, try writing your code with me.",
+    "answer": "Prolog",
+    "hint": "I am a declarative programming language",
+    "response":"This is the end of the flash riddle round - keep an eye our for the 3rd round, which will end with the location of the next puzzle piece.",
+    "points": 60
   }
 ]
