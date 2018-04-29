@@ -63,40 +63,56 @@ class Service {
             json:true
           }, function(err, resp, body) {
             console.log(body);
+            if(body.challengesSolved.includes(challenge.id)){
+              client.messages
+              .create({
+                to: data["From"],
+                from: '+441403540181',
+                body: "The mighty Thor will strike you down. Don't cheat!"
+              })
+              .then(message => console.log(message.sid));
+              return true;
+            } else if(challenge.response !== undefined){
+               //send response if it exists
+              client.messages
+              .create({
+                to: data["From"],
+                from: '+441403540181',
+                body: challenge.response,
+              })
+              .then(message => console.log(message.sid));
+            }else {
+              //otherwise send next challenge
+              var nextChallenge = challenges.filter(function(obj){
+                return obj.id == parseInt(challengeNumber)+1;
+              })
+              client.messages
+              .create({
+                to: data["From"],
+                from: '+441403540181',
+                body: 'Well done! Here is the next challenge.\n'+nextChallenge[0].challenge,
+              })
+              .then(message => console.log(message.sid));
+            }
             body.challengesSolved.push(challenge.id);
             console.log(body.challengesSolved);
               request.put({
                 url: url + db + data["From"].slice(3, data["From"].length),
-                body: { score:body.score+challenge.points, challengesSolved:body.challengesSolved, "_rev": body["_rev"]},
+                body: { name: body.name, score:body.score+challenge.points, challengesSolved:body.challengesSolved, "_rev": body["_rev"]},
                 json: true,
                 }, function(err, resp, body) {
                   console.log(body);
                 })
           })
-
-          //send response if it exists
-          if(challenge.response !== undefined){
-            client.messages
-            .create({
-              to: data["From"],
-              from: '+441403540181',
-              body: challenge.response,
-            })
-            .then(message => console.log(message.sid));
-          }else {
-            //otherwise send next challenge
-            var nextChallenge = challenges.filter(function(obj){
-              return obj.id == parseInt(challengeNumber)+1;
-            })
-            client.messages
-            .create({
-              to: data["From"],
-              from: '+441403540181',
-              body: 'Well done! Here is the next challenge.\n'+nextChallenge[0].challenge,
-            })
-            .then(message => console.log(message.sid));
-          }
-        } else {
+        } else if (data["Body"].toLowerCase().indexOf("hint") !== -1){
+          client.messages
+          .create({
+            to: data["From"],
+            from: '+441403540181',
+            body: challenge.hint,
+          })
+          .then(message => console.log(message.sid));
+        }else{
           client.messages
           .create({
             to: data["From"],

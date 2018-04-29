@@ -11,7 +11,10 @@ class Leaderboard extends Component {
 
   }
   componentWillReceiveProps(nextProps) {
-    this.setState({ users: nextProps.users });
+    nextProps.users.sort(function(a,b){
+        return b.doc.score - a.doc.score;
+    })
+    this.setState({ users: nextProps.users});
   }
 
   render() {
