@@ -38,7 +38,7 @@ class Service {
       if(body.error){
         //check if the response is the answer to a challenge
         var challengeNumber = data["Body"].split(" ,.")[0];
-        console.log(isNaN(parseInt(challengeNumber)));
+        console.log(parseInt(challengeNumber));
         if(isNaN(parseInt(challengeNumber))) {
           client.messages
           .create({

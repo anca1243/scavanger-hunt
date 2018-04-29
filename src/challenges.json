@@ -53,7 +53,42 @@
     "challenge": "8. I only answer yes or no, my roots are in first order logic; If you feel like crying, try writing your code with me.",
     "answer": "Prolog",
     "hint": "I am a declarative programming language",
-    "response":"This is the end of the flash riddle round - keep an eye our for the 3rd round, which will end with the location of the next puzzle piece.",
     "points": 60
+  },
+  {
+    "id": 9,
+    "challenge": "I'm the Greek brother of Sleipnir, up high in the sky, go Google my name and find my brightest alpha eye",
+    "answer": "Markab",
+    "hint": "I have magical powers and wings, and the answer to my riddle is hidden in the stars",
+    "points": 60
+  },
+  {
+    "id": 10,
+    "challenge": "Look up in the sky, past time and date, spot the hidden star to find the next key",
+    "answer": "timeanddate.com",
+    "hint": "tick tock, the end is drawing near",
+    "points": 50
+  },
+  {
+    "id": 11,
+    "challenge": "I'm the head of the small bear and I am not the brightest, but everyone in Hollywood thinks I show the right way. Who am I?",
+    "answer": "North Star",
+    "hint": "The Pole gives you the name",
+    "points": 50
+  },
+  {
+    "id": 12,
+    "challenge": "I'm glowing in Greek, brightest in the night, I'm brother to all dogs, and spent some time in Azkaban.",
+    "answer": "Sirius",
+    "hint": "I did not betray Lily and James",
+    "points": 50
+  },
+  {
+    "id": 13,
+    "challenge": "In the late hours of night, sitting by the cold campfire, follow the starts to get to the next challenge",
+    "answer": "explorer",
+    "hint": "It all starts in a quiet place",
+    "response": "Explore under the screen, you might find the next puzzle piece.",
+    "points": 50
   }
 ]

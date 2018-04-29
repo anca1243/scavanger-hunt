@@ -12,25 +12,33 @@ var db = 'scavanger_test/'
 phones=["+447519239035"];
 
 var challenge = challenges.filter(function(obj){
-  return obj.id == 5;
+  return obj.id == 9;
 })
 challenge = challenge[0];
 ///"+db+"/_all_docs"
-request.get({
-  url: url + db +"/_all_docs",
-  json:true
-}, function(err, resp, body) {
-  console.log(body);
-  phones = body.rows.map(a => "+44"+a.id);
-  console.log(phones);
-  for ( var index in phones ){
-    client.messages
-    .create({
-      to: phones[index],
-      from: '+441403540181',
-      body: "Good Morning, Astronauts\nThe scavanger hunt did not end yet! We have prepared flash riddle round for you to start the day with!\nGood luck!\n\n"+challenge.challenge,
-    })
-    .then(message => console.log(message.sid));
-  }
-})
+// request.get({
+//   url: url + db +"/_all_docs",
+//   json:true
+// }, function(err, resp, body) {
+//   console.log(body);
+//   phones = body.rows.map(a => "+44"+a.id);
+//   console.log(phones);
+//   for ( var index in phones ){
+//     client.messages
+//     .create({
+//       to: phones[index],
+//       from: '+441403540181',
+//       body: "The 3rd round is starting now, be ready to become a space explorer!\n\n"+challenge.challenge,
+//     })
+//     .then(message => console.log(message.sid));
+//   }
+// })
 console.log("running")
+console.log("running");
+client.messages
+.create({
+  to: "+447519239035",
+  from: '+441403540181',
+  body: "The 3rd round is starting now, be ready to become a space explorer!\n\n"+challenge.challenge,
+})
+.then(message => console.log(message.sid));
