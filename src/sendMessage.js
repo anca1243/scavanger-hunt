@@ -15,30 +15,22 @@ var challenge = challenges.filter(function(obj){
   return obj.id == 9;
 })
 challenge = challenge[0];
-///"+db+"/_all_docs"
-// request.get({
-//   url: url + db +"/_all_docs",
-//   json:true
-// }, function(err, resp, body) {
-//   console.log(body);
-//   phones = body.rows.map(a => "+44"+a.id);
-//   console.log(phones);
-//   for ( var index in phones ){
-//     client.messages
-//     .create({
-//       to: phones[index],
-//       from: '+441403540181',
-//       body: "The 3rd round is starting now, be ready to become a space explorer!\n\n"+challenge.challenge,
-//     })
-//     .then(message => console.log(message.sid));
-//   }
-// })
-console.log("running")
-console.log("running");
-client.messages
-.create({
-  to: "+447519239035",
-  from: '+441403540181',
-  body: "The 3rd round is starting now, be ready to become a space explorer!\n\n"+challenge.challenge,
+// /"+db+"/_all_docs"
+request.get({
+  url: url + db +"/_all_docs",
+  json:true
+}, function(err, resp, body) {
+  console.log(body);
+  phones = body.rows.map(a => "+44"+a.id);
+  console.log(phones);
+  for ( var index in phones ){
+    client.messages
+    .create({
+      to: phones[index],
+      from: '+441403540181',
+      body: "The 3rd round is starting now, be ready to become a space explorer!\n\n"+challenge.challenge,
+    })
+    .then(message => console.log(message.sid));
+  }
 })
-.then(message => console.log(message.sid));
+console.log("running")
