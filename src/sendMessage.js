@@ -12,7 +12,7 @@ var db = 'scavanger_test/'
 phones=["+447519239035"];
 
 var challenge = challenges.filter(function(obj){
-  return obj.id == 9;
+  return obj.id == 14;
 })
 challenge = challenge[0];
 // /"+db+"/_all_docs"

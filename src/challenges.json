@@ -92,14 +92,14 @@
   },
   {
     "id": 14,
-    "challenge": "14 I am of the olden age, yet every week, the fourth is mine. Who am I?",
+    "challenge": "14. I am of the olden age, yet every week, the fourth is mine. Who am I?",
     "answer": "Thor",
     "hint": "I graced mortals with my presence in 2011, 2013, and 2017",
     "points": 80
   },
   {
     "id": 15,
-    "challenge": "Well done, you're almost finished! Find Thor and solve his riddle to receive the last puzzle piece.",
+    "challenge": "15. Well done, you're almost finished! Find Thor and solve his riddle to receive the last puzzle piece.",
     "answer": "Captain America",
     "response": "Well done! You have finished the Scavanger hunt! Hope you had fun!",
     "points": 100
