@@ -27,7 +27,8 @@
     "start": "node src/",
     "mocha": "mocha test/ --recursive --exit",
     "build": "node ./node_modules/webpack/bin/webpack.js",
-    "watch": "node ./node_modules/webpack/bin/webpack.js -w"
+    "watch": "node ./node_modules/webpack/bin/webpack.js -w",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "dependencies": {
     "@feathersjs/configuration": "^1.0.2",
