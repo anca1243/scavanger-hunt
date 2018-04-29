@@ -28,7 +28,7 @@ request.get({
     .create({
       to: phones[index],
       from: '+441403540181',
-      body: "The 3rd round is starting now, be ready to become a space explorer!\n\n"+challenge.challenge,
+      body: "The 4rd and final round is just around the corner. Good luck and see you at the hack presentations!\n\n"+challenge.challenge,
     })
     .then(message => console.log(message.sid));
   }
